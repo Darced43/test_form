@@ -1,0 +1,167 @@
+@font-face {
+  font-family: 'Manrope';
+  src: url('./fonts/Manrope-VariableFont_wght.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('./fonts/Inter-VariableFont_slnt\,wght.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 50px 0;
+}
+
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+
+.main__content {
+  background: #FFFFFF;
+  box-shadow: 4px 4px 25px rgba(14, 76, 121, 0.18);
+  border-radius: 10px;
+  padding: 40px 50px;
+}
+
+.main__content h2 {
+  font-family: 'Manrope', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 38px;
+  text-align: center;
+  color: #2B689B;
+  margin: 40px 0 50px 0;
+}
+
+.main__logo {
+  margin: 0 auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.form__element {
+  display: flex;
+  padding: 10px;
+  border-bottom: 1px solid #2B689B;
+
+}
+
+.red_star {
+  margin-right: 5px;
+  color: rgba(255, 182, 193, 1);
+  display: flex;
+  align-items: center;
+}
+
+.form__email_input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  color: black;
+}
+
+.form__email_input::placeholder {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  color: black;
+}
+
+
+.eye {
+  content: url('./img/ayes__close.svg');
+}
+
+.open {
+  width: 20px;
+  height: 22px;
+  content: url('./img/ayes__open.png');
+}
+
+.control {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 140%;
+  color: #F13F58;
+  margin: 1px 0px 0px 10px;
+  display: none;
+}
+
+.info {
+  margin: 20px 0;
+  display: flex;
+  padding: 10px;
+}
+
+.info p {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #2B689B;
+}
+
+.form__button {
+  background-color: rgba(255, 226, 146, 1);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 40px;
+  margin: 0 auto;
+  width: 242px;
+}
+
+.form__button span {
+  margin-right: 13px;
+}
+
+.reg {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.reg__text {
+  display: inline;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.01em;
+  color: #2B689B;
+  text-decoration: none;
+}
+
+.reg__text.first {
+  margin-right: 20px;
+}

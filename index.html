@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main__content">
+        <img class='main__logo' src="./img/logo.svg" alt="логотип">
+        <h2>Изменение пароля</h2>
+        <form action="/" id="form" autocomplete="off">
+          <div class="form__element ">
+            <span class="red_star">*</span>
+            <input type="text" autocomplete="off" placeholder="Email / Логин" class="form__email_input">
+          </div>
+          <div class="form__element ">
+            <span class="red_star">*</span>
+            <input type="text" autocomplete="off" placeholder="Контрольная строка" class="form__email_input">
+          </div>
+          <p id='wordControl' class="control">Неверное контрольное слово</p>
+          <div class="form__element ">
+            <span class="red_star">*</span>
+            <input id='PasNew' type="password" readonly onfocus="this.removeAttribute('readonly');" autocomplete='off' placeholder="Новый пароль" class="form__email_input">
+            <span class="eye"></span>
+          </div>
+          <p id='simbolControl' class="control">Пароль должен быть не менее 6 символов</p>
+          <div class="form__element ">
+            <span class="red_star">*</span>
+            <input id="passwordCopy" type="password" readonly onfocus="this.removeAttribute('readonly');" autocomplete='off' placeholder="Подтверждение пароля" class="form__email_input">
+          </div>
+          <p id='passwordControl' class="control">Пароли не совпадают</p>
+          <div class="info">
+            <span class="red_star">*</span>
+            <p class="">Обязательные поля</p>
+          </div>
+          <button class="form__button">
+            <span>Изменить пароль</span>
+            <img src="./img/Arrow.svg" alt="стрелка">
+          </button>
+      </form> 
+      <div class="reg">
+          <a class="reg__text first" href="#">Зарегистрироваться</a>
+          <a class='reg__text' href="#">Войти</a>
+      </div>
+      </div>
+    </div>
+    <script src="/main.js"></script>
+  </body>
+</html>
